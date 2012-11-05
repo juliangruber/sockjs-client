@@ -2314,7 +2314,7 @@ if (typeof define === 'function' && define.amd) {
     define('sockjs', [], function(){return SockJS;});
 }
 
-if (typeof module === 'object' && module && module.exports) {
+if (typeof module !== 'undefined' && module && module.exports) {
     module.exports = SockJS;
 }
 //     [*] End of lib/index.js
